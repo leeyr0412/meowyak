@@ -1,0 +1,21 @@
+spring:
+  profiles:
+    active: local
+
+  application:
+    name: meowyak
+
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: false
+    properties:
+      hibernate:
+        format_sql: true
+
+  jwt:
+    expiration: 86400000 #24h
+
+  springdoc:
+    swagger-ui:
+      path: /swagger-ui.html
